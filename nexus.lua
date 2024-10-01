@@ -275,15 +275,13 @@ end
 
 
 function e1()
-so = gg.getRangesList('libunity.so')[1].start
-py = 0x6E83478
-setvalue(so + py, 4, "~A8 LDR  S0, [PC,#0x8]")
-
-so = gg.getRangesList('libunity.so')[1].start
-py = 0x6E83478
-setvalue(so + py, 4, "~A8 RET")
-
-reload =gg.prompt({"🔴ᴀᴅᴊᴜꜱᴛᴀʙʟᴇ ᴀɪᴍʙᴏᴛ🔴\n [0;10000]"},nil,{"number"})	
+unity=gg.getRangesList("libunity.so")[1].start
+setValues(unity + 0x6E83478, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(unity + 0x6E83478 + 0x4, 4, "~A8 RET")
+aimbot =gg.prompt({"🔴ᴀᴅᴊᴜꜱᴛᴀʙʟᴇ ᴀɪᴍʙᴏᴛ ꜰᴏʀ🔴\n🔹ꜱᴍɢ\n🔹ʟᴍɢ\n🔹ᴀꜱꜱᴀᴜʟᴛ\n🔘ᴄᴏᴍᴍᴀɴᴅ ʀᴀɴɢᴇ 1~1000000"},nil,{"number"})
+setValues(unity + 0x6E83478 + 0x8, 16, aimbot[1])
+gg.toast("Aɪᴍʙᴏᴛ Aᴄᴛɪᴠᴀᴛᴇ")
+end	
 --[[
 unity=gg.getRangesList("libunity.so")[1].start
 setValues(unity + 0x6E83478, 4, "~A8 LDR  S0, [PC,#0x8]")

@@ -283,9 +283,6 @@ setValues(unity + 0x6E83478 + 0x8, 16, aimbot[1])
 gg.toast("Aɪᴍʙᴏᴛ Aᴄᴛɪᴠᴀᴛᴇ")
 end
 
-
-
-
 function e2()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("0.18500000238", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)

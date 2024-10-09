@@ -1,4 +1,4 @@
-function A2() 
+function f2() 
 e = gg.prompt({
 "➣ AIMBOT 100% AR,SMG,LMG [LOBBY]",
 "➣ HITBOX [EVERYGAME]",

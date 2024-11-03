@@ -1,3 +1,14 @@
+function Lib() end
+function setvalue(address,flags,value) Lib('Modify address value(Address, value type, value to be modified)') local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
+function setValues(address, flags, value) gg.setValues({[1] = {address = address, flags = flags, value = value}}) end
+function setvalue(address,flags,value)
+local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
+function PS() end function setvalue(address,flags,value) PS('Modify address value (address, numeric type, value to be modified)') local tt={} tt[1]={} tt[1].address=address tt[  1].flags=flags tt[1].value=value gg.setValues(tt) end
+function setValues(address, flags, value)
+gg.setValues({[1] = {address = address, flags = flags, value = value}})
+end
+
+
 function A2() 
 e = gg.prompt({
 "⏹𝙰𝙸𝙼 𝙰𝚂𝚂𝙸𝚂𝚃 𝙰𝙻𝙻 𝙶𝚄𝙽𝚂 [ ᴀᴅᴊᴜꜱᴛᴀʙʟᴇ ]",

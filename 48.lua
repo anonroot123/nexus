@@ -83,7 +83,7 @@ if e[22] == true then e22() end
 if e[23] == true then e23() end
 if e[24] == true then e24() end
 if e[25] == true then e25() end
-if e[26] == true then home() end
+if e[26] == true then HOME() end
 end
 end
 
@@ -445,7 +445,7 @@ if ant1==12 then pink1() end
 if ant1==13 then blue1() end
 if ant1==14 then cyan1() end
 if ant1==15 then green1() end
-if ant1==16 then home() end
+if ant1==16 then HOME() end
 end
 
 function red()
